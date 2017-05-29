@@ -6,8 +6,4 @@ Create a project where day changes into night by clicking the appropriate button
 
 This project was inspired by Google Coder Projects from this link: http://googlecreativelab.github.io/coder-projects/projects/night_and_day/
 
-Goals: Document project with Readme file, develope wireframe, utilize css animations that are triggered by javascript events, use Github for version control.
-
-Time Limit I Set For Myself: 3 hours (including file creation)
-
-Time I Actually Spent on Project:
+Goals: Document project with Readme file, develope wireframe, utilize css animations that are triggered by javascript events.
