@@ -8,4 +8,4 @@ This project was inspired by Google Coder Projects from this link: http://google
 
 Goals: Document project with Readme file, utilize css animations that are triggered by javascript events.
 
-<strong>5/21/17</strong> - Project completed. Total work time was 5hours, 32 minutes.
+<strong>5/21/17</strong> - Project completed. Total work time was 5 hours, 32 minutes.
