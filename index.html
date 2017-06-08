@@ -3,14 +3,27 @@
 <head>
 	<title>Night and Day Project</title>
 	<meta charset="utf-8">
-	<link rel="stylesheet" type="text/css" href="stylesheet.css">
+	<link rel="stylesheet" type="text/css" href="styles/stylesheet.css">
 </head>
 
 <body>
-
-
-
-    <script src="scripts/script_main.js"></script>
+    <div id="sky">
+        <div class="ground">
+            <img src="images/bg01.png" id="landscape">
+        </div>
+        <div class="ground-night">
+            <img src="images/bg01b.png" id="night-scape">
+        </div>
+        <img src="images/sun.png" id="sun">
+        <img src="images/moon.png" id="moon">
+    </div>
+    <footer>
+    	<h2>God Pannel</h2>
+    	<p>(Choose a time of day for it to be.)</p>
+    	<div class="button" id="day">Day</div>
+    	<div class="button" id="night">Night</div>
+    </footer>
+    <script src="script_main.js"></script>
 </body>
 
 </html>
