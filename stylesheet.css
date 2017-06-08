@@ -2,3 +2,159 @@
 	padding: 0;
 	margin: 0;
 }
+
+html {
+	width: 100%;
+    height: 100%;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+#sky {
+	width: 100%;
+	height: 85%;
+	background-color: #ccccff;
+	transition: background-color 60s;
+}
+
+#sky.nightlight {
+	background-color: #00001a;
+	transition: background-color 48s;
+}
+
+.ground {
+	position: relative;
+	bottom: 200px;
+	width: 100%;
+	z-index: 5;
+}
+
+.ground-night {
+	position: relative;
+	bottom: 556px;
+	width: 100%;
+	z-index: 6;
+}
+
+img#landscape {
+	width: 100%;
+	position: relative;
+	top: 340px;	
+}
+
+img#night-scape {
+	width: 100%;
+	opacity: 0;
+	transition: opacity 60s;
+}
+
+img#night-scape.change {
+	opacity: .9;
+	transition: opacity 40s;
+}
+
+img#sun {
+	position: absolute;
+	top: 350px;
+	width: 175px;
+	z-index: 3;
+}
+
+img#sun.setSun {
+	animation-name: sunSet;
+	animation-duration: 24s;
+	animation-fill-mode: forwards;
+}
+
+img#sun.riseSun {
+	animation-name: sunRise;
+	animation-duration: 24s;
+	animation-delay: 12.8s;
+	animation-fill-mode: forwards;
+}
+
+img#moon {
+	position: absolute;
+	top: 385px;
+	left: 32px;
+	width: 115px;
+	z-index: 4;
+}
+
+img#moon.riseMoon {
+	animation-name: moonRise;
+	animation-duration: 24s;
+	animation-delay: 14.6s;
+	animation-fill-mode: forwards;
+
+}
+
+img#moon.setMoon {
+	position: absolute;
+	animation-name: moonSet;
+	animation-duration: 24s;
+	animation-fill-mode: forwards;
+}
+
+.button {
+	position: relative;
+	width: 150px;
+	height: 30px;
+	color: #ffffff;
+	font-size: 1.7em;
+	text-align: center;
+	float: left;
+}
+
+.button:hover {
+	cursor: pointer;
+	opacity: .7;
+}
+
+#day {
+	background-color: green;
+    left: 25%;
+}
+
+#night {
+	background-color: blue;
+    left: 55%;
+}
+
+footer {
+	position: relative;
+	width: 100%;
+	height: 200px;
+	background-color: #000000;
+}
+
+/* ---- KEYFRAMES ---- */
+
+@keyframes sunRise {
+	0% {transform: translate(0px, 0px);}
+	100% {transform: translate(200px, -325px);}
+}
+
+@keyframes sunSet {
+	0% {transform: translate(200px, -325px);}
+	100% {transform: translate(0px, 0px);}
+}
+
+@keyframes moonRise {
+	0% {transform: translate(0px, 0px);}
+	100% {transform: translate(200px, -325px);}
+}
+
+@keyframes moonSet {
+	0% {transform: translate(200px, -325px);}
+	100% {transform: translate(0px, 0px);}
+}
+
+/*@keyframes toNightLight {
+	0% {transition: background-color(#ccccff)}
+	100% {transition: background-color(#00001a)}
+}*/
